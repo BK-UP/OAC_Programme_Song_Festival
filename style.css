@@ -61,26 +61,26 @@ button{
     transition: transform 0.8s ease-in-out;
 }
 .page_1{
-    z-index: 7;
-}
-.page_2{
     z-index: 6;
 }
-.page_3{
+.page_2{
     z-index: 5;
 }
-.page_4{
+.page_3{
     z-index: 4;
 }
-.page_5{
+.page_4{
     z-index: 3;
 }
-.page_6{
+.page_5{
     z-index: 2;
 }
-.page_7{
+.page_6{
     z-index: 1;
 }
+/*.page_7{
+    z-index: 1;
+}*/
 .flip{
     transform: translateX(-5px) rotateY(-180deg);
 }
@@ -194,6 +194,113 @@ img{
     .firpage h6{
         color: var(--primaryColor);
     }
+}
+@media screen and (max-width: 770px){
+    h1{
+        font-size: small;
+    }
+    img{
+        width: 100%;
+    }
+    .venueInfo{
+        margin: 2em auto;
+        font-size: 0.5em;
+    }
+    .venueInfo p{
+        margin: 0;
+    }
+    h5{
+        font-size: 1em !important;
+    }
+    .song1{
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    .song1 p{
+        font-size: 0.8em;
+        margin: 0;
+    }
+    .songCLose{
+        padding-top: 1em;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 2em;
+    }
+    .songTitle_1, .songTitle_2, .song3, .song4{
+        font-size: 1em;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .song2{
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+    .song2 p{
+        margin: 0;
+        font-size: .8em;
+    }
+    .pages .container{
+        max-height: 90%;
+        overflow-y: scroll;
+    }
+    table{
+        font-size: .5em;
+    }
+    .rounds{
+        padding: .5em;
+        background-color: var(--secondaryColor);
+        color: var(--primaryColor);
+        margin-bottom: .25em;
+    }
+    .rounds h4{
+        font-size: 1.5em;
+        
+        color: var(--fourthColor);
+    }
+    .roundT thead th{
+        color: var(--primaryColor);
+        background-color: var(--secondaryColor);
+        border: solid 1px var(--primaryColor);
+        font-size: 1.75em;
+    }
+    .roundT tbody tr td{
+        border: solid 1px var(--secondaryColor);
+        font-size: 1.5em;
+    }
+    .schedule h5{
+        padding: .5em;
+        font-size: 1em;
+        color: var(--fourthColor);
+        background-color: var(--secondaryColor);
+        margin-bottom: .25em;
+    }
+    .schedule table thead th{
+        background-color: var(--secondaryColor);
+        color: var(--primaryColor);
+    }
+    .schedule table tbody tr:nth-child(odd){
+        background-color: var(--someWhite);
+    }
+    .schedule table tbody tr td, .schedule table tfoot tr td{
+        border: solid 1px var(--secondaryColor);
+    }
+    .firpage{
+        padding: 1em;
+        background-color: var(--secondaryColor);
+        margin-bottom: .5em;
+    }
+    .firpage h4{
+        color: var(--fourthColor);
+        text-align: center;
+        margin: 0;
+    }
+    .firpage h6{
+        color: var(--primaryColor);
+    }
+}
+.firpage{
+    text-align: center;
 }
 .container{
     transition: opacity 0.8s 0.2s;
