@@ -1,9 +1,9 @@
 :root{
     --backgroundColor: #ffe695;
     --primaryColor: #F8F9FC;
-    --secondaryColor: #0B1F3B;
     --thirdColor: #ef767a;
     --fourthColor: #C9A227;
+    --secondaryColor: #0B1F3B;
     --someWhite: #F8F4EA;    
 }
 h4{
@@ -248,7 +248,7 @@ img{
     }
     .pages .container{
         max-height: 90%;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     table{
         font-size: .5em;
@@ -284,6 +284,13 @@ img{
     .schedule table thead th{
         background-color: var(--secondaryColor);
         color: var(--primaryColor);
+        font-size: 1.5em;
+    }
+    .schedule table tbody tr td{
+        font-size: 1.25em;
+    }
+    .schedule table tfoot tr td{
+        font-size: 1.25em;
     }
     .schedule table tbody tr:nth-child(odd){
         background-color: var(--someWhite);
@@ -337,4 +344,23 @@ img{
 }
 .flip .container{
     opacity: 0;
+}
+::-webkit-scrollbar {
+    height: 1em;  /* Height of horizontal scrollbar */
+    width: .25em   /* Width for vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #0B1F3B;  /* Dark blue track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C9A227;  /* Gold thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8871f;  /* Darker gold on hover */
+}
+.song1, .song2, .song3, .song4{
+    font-family: 'Times New Roman', Times, serif;
 }
