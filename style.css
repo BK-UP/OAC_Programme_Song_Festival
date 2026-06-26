@@ -93,6 +93,9 @@ img{
     width: 100%;
 }
 @media screen and (max-width: 500px){
+    .screenIsbig{
+        display: none;
+    }
     h1{
         font-size: small;
     }
@@ -196,6 +199,9 @@ img{
     }
 }
 @media screen and (max-width: 770px){
+    .screenIsbig{
+        display: none;
+    }
     h1{
         font-size: small;
     }
@@ -297,6 +303,30 @@ img{
     }
     .firpage h6{
         color: var(--primaryColor);
+    }
+}
+@media screen and (min-width: 771px) {
+    .layout{
+        display: none;
+    }
+    .screenIsbig{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--secondaryColor);
+    }
+    button{
+        display: none;
+    }
+    .screenIsbig h1{
+        text-align: center;
+        font-size: 3em;
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        right: 25vw;
+        color: var(--fourthColor);
     }
 }
 .firpage{
