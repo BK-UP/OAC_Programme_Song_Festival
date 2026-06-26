@@ -1,0 +1,184 @@
+:root{
+    --backgroundColor: #ffe695;
+    --primaryColor: #F8F9FC;
+    --secondaryColor: #0B1F3B;
+    --thirdColor: #ef767a;
+    --fourthColor: #C9A227;
+    --someWhite: #F8F4EA;    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:  var(--backgroundColor);
+    overflow: hidden;
+}
+button{
+    border: none;
+    z-index: 20;
+    position: absolute;
+    padding: 0px 5px 5px 5px;
+    background-color: var(--fourthColor);
+    color: white;
+    font-weight: bolder;
+}
+#prevButt{
+    border-radius: .25rem;
+    bottom:6vh;
+    left: 8vw;
+}
+#nextButt{
+    border-radius: .25rem;
+    bottom:6vh;
+    right: 13vw;
+}
+.programe{
+    position: absolute;
+    width: 75vw;
+    height: 90vh;
+    background-color: var(--primaryColor);
+    top:5vh;
+    left:10vw;
+    right: 10vw;
+    bottom: 5vh;
+    perspective: 1200px;
+}
+.pages{
+    transform-origin: left;
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    background-color: white;
+    box-shadow: .1em .1em .25em rgb(160, 165, 160);
+    transition: transform 0.8s ease-in-out;
+}
+.page_1{
+    z-index: 7;
+}
+.page_2{
+    z-index: 6;
+}
+.page_3{
+    z-index: 5;
+}
+.page_4{
+    z-index: 4;
+}
+.page_5{
+    z-index: 3;
+}
+.page_6{
+    z-index: 2;
+}
+.page_7{
+    z-index: 1;
+}
+.flip{
+    transform: translateX(-5px) rotateY(-180deg);
+}
+
+/*--------------------------------------------------------------*/
+.container{
+    margin-top: 1.5em;
+}
+img{
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    h1{
+        font-size: small;
+    }
+    img{
+        width: 100%;
+    }
+    .venueInfo{
+        margin: 2em auto;
+        font-size: 0.5em;
+    }
+    .venueInfo p{
+        margin: 0;
+    }
+    h5{
+        font-size: 1em !important;
+    }
+    .song1{
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    .song1 p{
+        font-size: 0.5em;
+        margin: 0;
+    }
+    .songCLose{
+        padding-top: 1em;
+        text-align: center;
+        font-weight: bold;
+    }
+    .songTitle_1, .songTitle_2, .song3, .song4{
+        font-size: .75em;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .song2{
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+    .song2 p{
+        margin: 0;
+        font-size: .60em;
+    }
+    .pages .container{
+        max-height: 90%;
+        overflow-y: scroll;
+    }
+    table{
+        font-size: .5em;
+    }
+    .rounds{
+        padding: .5em;
+        background-color: var(--secondaryColor);
+        color: var(--primaryColor);
+        margin-bottom: .25em;
+    }
+    .rounds h4{
+        font-size: 1.5em;
+        
+        color: var(--fourthColor);
+    }
+    .roundT thead th{
+        color: var(--primaryColor);
+        background-color: var(--secondaryColor);
+        border: solid 1px var(--primaryColor);
+
+    }
+    .roundT tbody tr td{
+        border: solid 1px var(--secondaryColor);
+    }
+    .schedule h4{
+        padding: 1em;
+        color: var(--fourthColor);
+        background-color: var(--secondaryColor);
+        margin-bottom: .25em;
+    }
+    .schedule table thead th{
+        background-color: var(--secondaryColor);
+        color: var(--primaryColor);
+    }
+    .schedule table tbody tr:nth-child(odd){
+        background-color: var(--someWhite);
+    }
+    .schedule table tbody tr td, .schedule table tfoot tr td{
+        border: solid 1px var(--secondaryColor);
+    }
+}
+.container{
+    transition: opacity 0.8s 0.2s;
+}
+.flip .container{
+    opacity: 0;
+}
