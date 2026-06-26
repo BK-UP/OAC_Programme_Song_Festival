@@ -1,4 +1,4 @@
-let arr = [["page_1",7],["page_2",6],["page_3",5],["page_4",4],["page_5",3],["page_6",2],["page_7",1]];
+let arr = [["page_1",7],["page_2",6],["page_3",5],["page_4",4],["page_5",3],["page_6",2]];
 let currentIndex = 0;
 
 function nextPage() {
