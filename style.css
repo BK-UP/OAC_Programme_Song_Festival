@@ -38,11 +38,11 @@ button{
 #nextButt{
     border-radius: .25rem;
     bottom:6vh;
-    right: 13vw;
+    right: 4vw;
 }
 .programe{
     position: absolute;
-    width: 75vw;
+    width: 85vw;
     height: 90vh;
     background-color: var(--primaryColor);
     top:5vh;
